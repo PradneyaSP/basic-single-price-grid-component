@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Single Price Grid Component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body {
+      background-color: hsl(204, 43%, 93%);
+      display: grid;
+      justify-content: center;
+      height: 100vh;
+      align-items: center;
+    }
+
+    .wrapper {
+      display: grid;
+      grid-template-columns: 25rem 25rem;
+      grid-template-rows: 19rem 19rem;
+      grid-auto-rows: 19rem;
+      font-family: 'Karla', sans-serif;
+    }
+
+    .item {
+      box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    }
+
+    .text {
+      grid-column: span 2;
+      background-color: white;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      padding: 50px;
+    }
+
+    .heading {
+      color: #4ABEBD;
+      font-weight: bolder;
+      font-size: xx-large;
+    }
+
+    .subheading {
+      color: hsl(71, 73%, 54%);
+      font-weight: bold;
+      font-size: x-large;
+    }
+
+    .text>p {
+      color: hsl(203, 5%, 69%);
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    .price {
+      background-color: hsl(179, 62%, 43%);
+      border-bottom-left-radius: 10px;
+      padding-top: 20px;
+      padding-left: 50px;
+    }
+
+    .price h3 {
+      color: white;
+      margin-bottom: 0px;
+      font-size: 1.4rem;
+    }
+
+    .price .time {
+      padding: 0px;
+      margin: 0px;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+    }
+
+    .cost {
+      font-size: 45px;
+      color: white;
+    }
+
+    .per-month {
+      font-size: 1.2rem;
+      padding-left: 1rem;
+      color: #79E1E4;
+    }
+
+    .description {
+      color: #C4FFFF;
+      font-size: large;
+    }
+
+    .sign-up {
+      background-color: hsl(71, 73%, 54%);
+      border: none;
+      font-size: 1.2rem;
+      width: 300px;
+      height: 50px;
+      border-radius: 10px;
+      color: white;
+      margin-top: 10px;
+    }
+
+    .why-us {
+      background-color: #50cac8;
+      border-bottom-right-radius: 10px;
+      padding-top: 20px;
+      padding-left: 50px;
+      padding-right: 142px;
+    }
+
+    .why-us h3 {
+      color: white;
+      font-size: 1.4rem;
+    }
+
+    .why-us p {
+      color: #c6ffffc2;
+      line-height: 1.5rem;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    @media (max-width: 819px) {
+      .wrapper {
+        display: grid;
+        grid-template-columns: minmax(10rem, 20rem);
+        grid-template-rows: 19rem 19rem;
+        grid-auto-rows: 19rem;
+        font-family: 'Karla', sans-serif;
+      }
+
+      .text {
+        grid-column: span 1;
+        background-color: white;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        padding: 30px;
+      }
+
+      .heading {
+        font-weight: bolder;
+        font-size: 1.5rem;
+      }
+
+      .subheading {
+        font-size: large;
+      }
+
+      .text>p {
+        color: hsl(203, 5%, 69%);
+        font-size: 15px;
+        line-height: 25px;
+        margin-bottom: 0;
+      }
+
+      .price {
+        background-color: hsl(179, 62%, 43%);
+        padding-top: 10px;
+        padding-left: 30px;
+        border-bottom-left-radius: 0px;
+      }
+
+      .price h3 {
+        color: white;
+        margin-bottom: 0px;
+        font-size: 1.3rem;
+      }
+
+      .price .time {
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+      }
+
+      .cost {
+        font-size: 45px;
+        color: white;
+      }
+
+      .per-month {
+        font-size: 1.2rem;
+        padding-left: 1rem;
+        color: #79E1E4;
+      }
+
+      .description {
+        color: #C4FFFF;
+        font-size: large;
+        margin-top: 15px;
+      }
+
+      .sign-up {
+        background-color: hsl(71, 73%, 54%);
+        border: none;
+        font-size: 1.2rem;
+        width: 250px;
+        height: 50px;
+        border-radius: 10px;
+        color: white;
+        margin-top: 20px;
+      }
+
+      .why-us {
+        background-color: #50cac8;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        padding-top: 20px;
+        padding-left: 50px;
+        padding-right: 0px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="item text">
+      <span class="heading">Join our community</span></br></br></br>
+      <span class="subheading"> 30-day, hassle-free money back guarantee</span></br>
+      <p>Gain access to our full library of tutorials along with expert code reviews.
+        Perfect for any developers who are serious about honing their skills.</p>
+    </div>
+    <div class="item price">
+      <h3>Monthly Subscription</h3></br>
+      <p class="time"><span class="cost"> &dollar;29</span><span class="per-month">per month</span></p>
+      <p class="description">Full access for less than &dollar;1 a day</p>
+      <button class="sign-up">Sign Up</button>
+    </div>
+    <div class="item why-us">
+      <h3>Why Us</h3>
+      <p>
+        Tutorials by industry experts</br>
+        Peer &amp; expert code review</br>
+        Coding exercises</br>
+        Access to our GitHub repos</br>
+        Community forum</br>
+        Flashcard decks</br>
+        New videos every week</br>
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="">Pradneya</a>.
+    </p>
+  </footer>
+
+</body>
+
+</html>

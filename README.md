@@ -14,6 +14,10 @@ This repository contains a simple implementation of a single price grid componen
 ## Demo
 
 You can view a live demo of this Single Price Grid Component here: [Demo](https://pradneyasp.github.io/basic-single-price-grid-component/)
+![image](https://github.com/PradneyaSP/basic-single-price-grid-component/assets/122717386/5d4c6ae5-64da-4d2f-991a-e862b32b3974)
+![image](https://github.com/PradneyaSP/basic-single-price-grid-component/assets/122717386/56fc3b16-5770-4009-bce7-0da5ffc2274d)
+![image](https://github.com/PradneyaSP/basic-single-price-grid-component/assets/122717386/30e42931-fa41-48f5-b533-b945fdaba908)
+
 
 ## Features
 

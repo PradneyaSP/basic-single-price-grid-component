@@ -2,6 +2,15 @@
 
 This repository contains a simple implementation of a single price grid component using HTML and CSS.
 
+## Table of Contents
+
+- [Demo](#demo)
+- [Features](#features)
+- [Installation](#installation)
+- [Technologies Used](#technologies-used)
+- [Links](#links)
+- [Acknowledgements](#acknowledgements)
+
 ## Demo
 
 You can view a live demo of this Single Price Grid Component here: [Demo](https://pradneyasp.github.io/basic-single-price-grid-component/)
